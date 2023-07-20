@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;700;800&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -22,6 +22,7 @@ body {
 .nav-logo {
   display: flex;
   align-items: center;
+  gap: 20px;
 }
 .nav-logo ul {
   list-style: none;
@@ -59,30 +60,33 @@ body {
   margin-left: 32px;
   color: #3c354f;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 500px;
 }
 
 /* Main section style */
 
-.section-container {
+.play-like-section {
   display: flex;
   justify-content: space-between;
-  padding: 50px 240px;
-  background-image: url(/images/Group-14.png);
+  padding: 0 240px;
   background-repeat: no-repeat;
   align-items: center;
+  position: relative;
+}
+.test{
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
-.banner-content h3 {
+.play-like-section-item h3 {
   color: #0b0223;
   font-size: 48px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
+  font-weight: 400px;
   text-transform: uppercase;
 }
 
-.banner-content h1 {
+.play-like-section-item h1 {
   font-size: 95px;
   font-style: normal;
   font-weight: 800;
@@ -94,19 +98,21 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-.banner-content p {
+.play-like-section-description {
   color: #534c64;
   font-size: 20px;
   font-style: normal;
   font-weight: 500px;
   line-height: normal;
   text-transform: lowercase;
+  text-align: left;
+  margin-bottom: 17px;
 }
 
 .sign-in {
   color: #fff;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 600px;
   padding: 21px 40px;
   gap: 10px;
   border-radius: 48px;
@@ -119,7 +125,7 @@ body {
 .go-rogue {
   color: #fff;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 600px;
   padding: 21px 40px;
   gap: 10px;
   border-radius: 48px;
@@ -128,7 +134,8 @@ body {
   /* margin-top: 40px; */
 }
 
-.section-container-2 {
+/* we are gamer section style */
+.we-are-gamer-section-container {
   background: linear-gradient(
     90deg,
     rgba(255, 66, 165, 0.03) 0%,
@@ -139,14 +146,14 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.section-container-2-image {
+.we-are-gamer-section-image {
   padding: 50px auto;
 }
-.section-container-2-item {
+.we-are-gamer-section-item {
   text-align: right;
 }
 
-.section-2-title {
+.we-are-gamer {
   font-size: 48px;
   font-style: normal;
   font-weight: 700;
@@ -155,4 +162,122 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.we-are-gamer-description {
+  color: #534c64;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400px;
+  line-height: 30px;
+  margin: 24px auto;
+  text-align: right;
+}
+
+.know-more {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 21px 40px;
+  gap: 10px;
+  border-radius: 48px;
+  background: var(--linear, linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%));
+  border: 0;
+}
+
+.our-purpose {
+  color: #534c64;
+  text-align: right;
+  font-size: 24px;
+  font-weight: 500px;
+  line-height: 45px;
+  margin-top: 24px;
+}
+
+.unleash {
+  color: #534c64;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300px;
+  
+}
+.our-purpose {
+  font-weight: 300px;
+}
+
+.online-games-images {
+  display: flex;
+  justify-content: space-between;
+  margin: auto 240px;
+}
+
+.online-games-container > h3,
+p {
+  text-align: center;
+}
+
+.online-games-title {
+  color: #0b0223;
+  font-size: 48px;
+  font-weight: 700px;
+  margin-top: 120px;
+  margin-bottom: 16px;
+}
+
+.funny-video {
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.online-games-description {
+  color: #534c64;
+  font-size: 18px;
+  font-weight: 400px;
+  line-height: 30px;
+  margin-bottom: 48px;
+}
+
+.online-games-image-description {
+  color: #534c64;
+  font-size: 20px;
+  font-weight: 500px;
+  line-height: 30px;
+  text-align: left;
+  margin-top: 24px;
+}
+
+
+
+
+
+
+
+/* responsive style for mobile devcie */
+
+@media screen and (max-width: 1112px) {
+
+  .nav-container{
+    padding: 20px 20px;
+    flex-direction: column;
+   
+    
+  }
+  .nav-item ul{
+    flex-direction: column;
+    padding-bottom: 35px;
+    
+  }
+  .nav-item ul li {
+    margin-bottom: 36px;
+
+  }
+
+  .play-like-section{
+    flex-direction: column-reverse;
+  }
+
+
+
 }
