@@ -63,7 +63,7 @@ body {
   font-weight: 500px;
 }
 
-/* Main section style */
+/* play like the g.o.a.t section style */
 
 .play-like-section {
   display: flex;
@@ -135,6 +135,10 @@ body {
   /* margin-top: 40px; */
 }
 
+.image-size {
+  width: 100%;
+}
+
 /* we are gamer section style */
 .we-are-gamer-section-container {
   background: linear-gradient(
@@ -142,13 +146,14 @@ body {
     rgba(255, 66, 165, 0.03) 0%,
     rgba(255, 66, 165, 0.03) 100%
   );
-  padding: 0 240px;
+  margin: 0 240px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.we-are-gamer-section-image {
+.we-are-gamer-section-image img {
   padding: 50px auto;
+  width: 100%;
 }
 .we-are-gamer-section-item {
   text-align: right;
@@ -257,7 +262,7 @@ p {
   margin-top: 120px;
   align-items: center;
 }
-.play-instantly-section-item{
+.play-instantly-section-item {
   text-align: right;
 }
 
@@ -285,14 +290,12 @@ p {
   color: #534c64;
   font-size: 18px;
   font-weight: 400px;
-  line-height: 30px; 
+  line-height: 30px;
   text-align: right;
 }
 
 .play-instantly-section-image {
   position: relative;
-  
-  
 }
 /* .play-instantly-image{
   justify-content: right;
@@ -302,12 +305,122 @@ p {
   left: -160px;
   bottom: -80px;
 }
+/* paly game online section styles */
+
+.play-game-online-section-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 240px;
+  margin-top: 200px;
+  align-items: center;
+  margin-bottom: 120px;
+}
+
+.play-game-online-section-image {
+  position: relative;
+}
+
+.play-game-online-overlap-image {
+  position: absolute;
+  right: -150px;
+  bottom: -120px;
+}
+
+.play-game-online-section-item {
+  padding-left: 220px;
+}
+
+.play-game-online-title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 60px;
+  color: #0b0223;
+  margin-bottom: 24px;
+}
+
+.play-games,
+.online {
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.play-game-online-despription {
+  color: #534c64;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+}
+
+/* career section styles */
+.career-section-container {
+  background: linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%);
+}
+.career-section-item-content {
+  margin: 200px 0 200px 240px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.career-content {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.cateer-title {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 60px;
+  margin-bottom: 24px;
+}
+.career-description {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 32px;
+  text-align: left;
+}
+
+.career-options-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.career-skills,
+.career-location {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 40px;
+}
+.career-location {
+  text-align: right;
+}
+.career-btn {
+  border-radius: 48px;
+  background: #fff;
+  padding: 21px 40px;
+  border: 0;
+
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #FF42A5;
+  margin-top: 40px;
+  
+}
+/* responsive style start */
+/* responsive style start */
 
 /* responsive style for mobile devcie */
 
-@media screen and (max-width: 1112px) {
+@media screen and (max-width: 576px) {
   .nav-container {
-    padding: 20px 20px;
+    padding: 20px 50px;
     flex-direction: column;
   }
   .nav-logo {
@@ -328,5 +441,59 @@ p {
 
   .play-like-section {
     padding: 20px 20px;
+  }
+  .play-like-section {
+    width: 100%;
+  }
+
+  /* we are gammer */
+  .we-are-gamer-section-container {
+    flex-direction: column;
+    margin: 0 10px;
+  }
+  .we-are-gamer-section-image img {
+    width: 100%;
+    padding: 5px;
+  }
+  .we-are-gamer-section-item,
+  .we-are-gamer-description,
+  .our-purpose {
+    text-align: center;
+  }
+
+  /* online game funny game */
+
+  .online-games-images {
+    flex-direction: column;
+    margin: 0 15px;
+    text-align: center;
+  }
+  .image-card {
+    margin-bottom: 50px;
+  }
+
+  /* play instantly */
+
+  .play-instantly-section-container {
+    flex-direction: column;
+    padding: 20px 15px;
+  }
+
+  .play-instantly-section-item {
+    text-align: left;
+  }
+
+  .play-instantly-image {
+    width: 100%;
+  }
+  .overlap-image {
+    width: 50%;
+    left: 100px;
+  }
+}
+
+@media screen and (min-width: 567px) and (max-width: 1112px) {
+  .nav-container {
+    padding: 30px 50px;
   }
 }
