@@ -359,7 +359,7 @@ p {
   background: linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%);
 }
 .career-section-item-content {
-  margin: 200px 0 200px 240px;
+  margin: 200px 0 120px 240px;
   display: flex;
   justify-content: space-between;
 }
@@ -409,10 +409,95 @@ p {
   font-size: 20px;
   font-weight: 600;
   text-transform: uppercase;
-  color: #FF42A5;
+  color: #ff42a5;
   margin-top: 40px;
-  
 }
+
+/* Different type of game section */
+
+.card-section-container {
+  margin: 0 240px 120px;
+}
+.card-container-1,
+.card-container-2 {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.card img {
+  margin-right: 26px;
+}
+.card img h4 {
+  color: #0b0223;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* footer styles */
+.footer-container {
+  background: #0b0223;
+}
+.footer-logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 120px;
+}
+.footer-logo h3 {
+  color: #fff;
+  font-size: 45px;
+  font-weight: 700;
+  margin-left: 20px;
+}
+.footer-logo span {
+  color: #ff42a5;
+}
+.footer-list-item {
+  padding: 66px 0;
+}
+.footer-list-item ul {
+  text-align: center;
+}
+.footer-list-item ul li {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  display: inline;
+  margin-right: 60px;
+}
+.footer-social-icon {
+  text-align: center;
+  padding-bottom: 75px;
+}
+#social-icon {
+  margin-right: 40px;
+}
+
+.footer-tarms-condition ul {
+  text-align: center;
+}
+.footer-tarms-condition ul li {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  font-weight: 500;
+  display: inline;
+  margin-right: 60px;
+}
+
+.copy-right {
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 28px 0 120px;
+}
+
 /* responsive style start */
 /* responsive style start */
 
